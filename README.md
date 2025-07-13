@@ -21,10 +21,11 @@ PCB Features
 
 ![PCB](img/pcb.jpg)
 
-* (1) Angled female 5 pin header for direct connection to USB UART dongle, **MAKE SURE pins order matches** as some dongles hawe diferent order!
+* (1) Angled female 5 pin header for direct connection to USB UART dongle, **MAKE SURE pins order matches** as some dongles have different order!
 * (2) Male 5 pin header for connection to USB UART dongle using wires
 * (3) Programmed chip VCC voltage selector (5V, 3V3 or nothing) - voltage source is USB dongle
-* (4) DIL connector for zero force and other adapters with selectable UPDI pin (5). Can be used to plug 8 and more pins (14, 20) packages, which have different UPDI pin location.
+* (4) DIL connector for zero force and other programmed chip adapters with selectable UPDI pin (5). Can be used to plug 8 and more 
+  pins (14, 20) packages, which have different UPDI pin location.
 
 ![Zero force](img/zero-force.png)
 
@@ -43,7 +44,8 @@ Project Content
 
 * `UART-UPDI_gerber.zip` - Gerber file for PCB fabrication
 * `UART-UPDI.dip` - [DipTrace](https://diptrace.com/) PCB design file
-* `platformio_examples/` - examples how to use it from [PlatformIO](https://platformio.org/) projects with different programmer SW
+* `platformio_examples/` - examples how to use it in [PlatformIO](https://docs.platformio.org/en/latest/platforms/atmelmegaavr.html) projects 
+  with different programmer SW, eg. with [`pymcuprog`](https://github.com/microchip-pic-avr-tools/pymcuprog).
 
 License
 -------
